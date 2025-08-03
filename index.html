@@ -9,6 +9,9 @@
     <a-scene>
         <a-assets>
             <img id="theFlow" src="res/theFlow.jpg">
+            <img id="pavement" src="res/pavement.jpg">
+            <img id="pavement-nor" src="res/pavement_nor.jpg">
+            <img id="sky" src="res/sky.jpg">
             <a-asset-item id="vase" src="res/vase.glb"></a-asset-item>
         </a-assets>
 
@@ -38,7 +41,7 @@
 
         <!-- The Flow Picture -->
         <a-box depth="0.1" height="2" width="2.5" position="0 2 -9.9"></a-box>
-        <a-image src="#theFlow" position="0 2 -9.84" width="2" height="1.5"></a-image>
+        <a-image src="#theFlow" position="0 2 -9.83" width="2" height="1.5"></a-image>
 
         <!-- Description -->
         <a-box depth="0.1" height="0.2" width="2" position="0 0.8 -9.9"></a-box>
@@ -54,8 +57,10 @@
         <a-text value="Elegy of\nEndless Ruin" position="0 0.73 -3.61" color="black" align="center" scale="0.28 0.28 0.28"></a-text>
         <a-text value="- Valentin H." position="0 0.64 -3.61" color="black" align="center" scale="0.28 0.28 0.28"></a-text>
 
+        <!-- Ground -->
+        <a-plane material="color: #FFFFFF; src: #pavement; repeat: 5000 5000; normal-map: #pavement-nor; normal-texture-repeat: 5000 5000" rotation="-90 0 0" scale="10000 10000 1" position="0 -0.2 0"></a-plane>
 
-
+        <a-sky src="#sky"></a-sky>
     </a-scene>
 </body>
 </html>
