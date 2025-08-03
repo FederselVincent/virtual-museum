@@ -9,6 +9,7 @@
     <a-scene>
         <a-assets>
             <img id="theFlow" src="res/theFlow.jpg">
+            <a-asset-item id="vase" src="res/vase.glb"></a-asset-item>
         </a-assets>
 
         <!-- Museum Room --->
@@ -42,6 +43,19 @@
         <!-- Description -->
         <a-box depth="0.1" height="0.2" width="2" position="0 0.8 -9.9"></a-box>
         <a-text value="The Flow - Matthias H." position="0 0.8 -9.84" color="black" align="center" scale="0.8 0.8 0.8"></a-text>
+
+        <!-- Vase -->
+        <a-box depth="0.7" height="1" width="0.7" position="0 0.5 -4"></a-box>
+        <a-gltf-model src="#vase" position="0.215 1 -3.6" scale="0.4 0.4 0.4"></a-gltf-model>
+        <!-- Security Glass -->
+        <a-box color="#abdbe3" opacity="0.3" transparent="true" position="0 1.4 -4" depth="0.7" height="0.8" width="0.7"></a-box>
+        <a-box color="#777" depth="0.05" height="0.25" width="0.5" position="0 0.7 -3.65"></a-box>
+        <a-box depth="0.05" height="0.20" width="0.45" position="0 0.7 -3.64"></a-box>
+        <a-text value="Elegy of\nEndless Ruin" position="0 0.73 -3.61" color="black" align="center" scale="0.28 0.28 0.28"></a-text>
+        <a-text value="- Valentin H." position="0 0.64 -3.61" color="black" align="center" scale="0.28 0.28 0.28"></a-text>
+
+
+
     </a-scene>
 </body>
 </html>
