@@ -7,6 +7,10 @@
 </head>
 <body>
     <a-scene>
+        <a-assets>
+            <img id="theFlow" src="res/theFlow.jpg">
+        </a-assets>
+
         <!-- Museum Room --->
         <!-- Floor -->
         <a-box color="#777" depth="20" height="0.1" width="15" position="0 0 0"></a-box>
@@ -31,8 +35,13 @@
         <!-- Right Side -->
         <a-box color="#ccc" depth="20" height="8" width="0.1" position="7.5 4 0"></a-box>
 
+        <!-- The Flow Picture -->
+        <a-box depth="0.1" height="2" width="2.5" position="0 2 -9.9"></a-box>
+        <a-image src="#theFlow" position="0 2 -9.84" width="2" height="1.5"></a-image>
 
-
+        <!-- Description -->
+        <a-box depth="0.1" height="0.2" width="2" position="0 0.8 -9.9"></a-box>
+        <a-text value="The Flow - Matthias H." position="0 0.8 -9.84" color="black" align="center" scale="0.8 0.8 0.8"></a-text>
     </a-scene>
 </body>
 </html>
